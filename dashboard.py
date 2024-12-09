@@ -1,4 +1,3 @@
-# dashboard.py
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -19,12 +18,10 @@ def load_data():
         st.error(f"Error loading data: {str(e)}")
         return pd.DataFrame()
 
-
 def create_dashboard():
     st.set_page_config(page_title="2025 Consulting Internships", layout="wide")
     st.title('2025 Consulting Internships (made by Abylay Iskakov)')
 
-    # Add refresh button
     if st.button('🔄 Refresh Data'):
         st.rerun()
 
@@ -38,10 +35,8 @@ def create_dashboard():
     st.sidebar.header('Filters')
 
     try:
-        # Add search box
         search_term = st.sidebar.text_input('🔍 Search Jobs', '').lower()
 
-        # Filters
         companies = ['All'] + sorted(df['company'].unique().tolist())
         company_filter = st.sidebar.selectbox('Select Company', companies)
 
@@ -53,7 +48,6 @@ def create_dashboard():
 
         filtered_df = df.copy()
 
-        # Apply search filter
         if search_term:
             filtered_df = filtered_df[
                 filtered_df['title'].str.lower().str.contains(search_term) |
@@ -61,7 +55,6 @@ def create_dashboard():
                 filtered_df['location'].str.lower().str.contains(search_term)
                 ]
 
-        # Apply dropdown filters
         if company_filter != 'All':
             filtered_df = filtered_df[filtered_df['company'] == company_filter]
 
