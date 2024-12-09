@@ -1,4 +1,3 @@
-# main.py
 import re
 import requests
 import pandas as pd
@@ -6,9 +5,7 @@ from datetime import datetime
 import warnings
 from data_cleaner import clean_company_url, extract_company_name
 
-# Suppress SSL warnings
 warnings.filterwarnings('ignore')
-
 
 def scrape_jobs():
     jobs = []
@@ -80,7 +77,6 @@ def scrape_jobs():
         content = response.text
         print("Content retrieved successfully, processing jobs...")
 
-        # Pre-filter rows to include only relevant internship listings
         rows = [row for row in content.split('\n') if '|' in row and
                 ('intern' in row.lower() or '2025' in row) and
                 not any(exclude in row.lower() for exclude in exclude_keywords)]
@@ -92,11 +88,9 @@ def scrape_jobs():
                 role = columns[2].strip().lower()
                 location = columns[3].strip()
 
-                # Extract URL from the markdown link format
                 url_match = re.search(r'\[(?:[^\]]*)\]\((https?://[^\s\)]+)\)', row)
                 link = url_match.group(1) if url_match else ''
 
-                # Check for matching roles
                 role_category = None
                 for keyword, category in role_keywords.items():
                     if keyword in role:
