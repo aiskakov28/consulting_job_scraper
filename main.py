@@ -10,7 +10,12 @@ warnings.filterwarnings('ignore')
 def scrape_jobs():
     jobs = []
     quick_info = []
-    url = "https://raw.githubusercontent.com/SimplifyJobs/Summer2025-Internships/dev/README.md"
+
+    # Define multiple sources
+    sources = {
+        'SimplifyJobs': "https://raw.githubusercontent.com/SimplifyJobs/Summer2025-Internships/dev/README.md",
+        'PittCSC': "https://raw.githubusercontent.com/pittcsc/Summer2024-Internships/dev/README.md"
+    }
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -18,166 +23,208 @@ def scrape_jobs():
 
     # Keywords for finance and business roles
     role_keywords = {
-        # Sales related roles
-        'sales analytics': 'Sales Analytics',
-        'sales analyst': 'Sales Analyst',
-        'sales consulting': 'Sales Consulting',
-        'sales intelligence': 'Sales Intelligence',
-        'sales insights': 'Sales Insights',
-        'sales operations': 'Sales Operations',
-        'sales planning': 'Sales Planning',
-        'sales strategy': 'Sales Strategy',
-
-        # Strategy related roles
-        'strategy analytics': 'Strategy Analytics',
-        'strategy analyst': 'Strategy Analyst',
-        'strategy consulting': 'Strategy Consulting',
-        'strategy intelligence': 'Strategy Intelligence',
-        'strategy insights': 'Strategy Insights',
-        'strategy operations': 'Strategy Operations',
-        'strategy planning': 'Strategy Planning',
-
-        # Investment related roles
-        'investment analytics': 'Investment Analytics',
-        'investment analyst': 'Investment Analyst',
+        # Investment Banking & Capital Markets
+        'investment': 'Investment Banking',
+        'banking': 'Investment Banking',
         'investment banking': 'Investment Banking',
-        'investment consulting': 'Investment Consulting',
-        'investment intelligence': 'Investment Intelligence',
-        'investment insights': 'Investment Insights',
-        'investment operations': 'Investment Operations',
-        'investment planning': 'Investment Planning',
-        'investment strategy': 'Investment Strategy',
-
-        # Business related roles
-        'business analytics': 'Business Analytics',
-        'business analyst': 'Business Analyst',
-        'business consulting': 'Business Consulting',
-        'business development': 'Business Development',
-        'business intelligence': 'Business Intelligence',
-        'business operations': 'Business Operations',
-        'business planning': 'Business Planning',
-        'business strategy': 'Business Strategy',
-
-        # Management related roles
-        'management consultant': 'Management Consultant',
-
-        # Investment Banking & Finance
-        'investment banking': 'Investment Banking',
-        'ib analyst': 'Investment Banking Analyst',
-        'ib associate': 'Investment Banking Associate',
+        'finance': 'Finance',
+        'securities': 'Securities',
+        'ib': 'Investment Banking',
+        'ibd': 'Investment Banking',
         'capital markets': 'Capital Markets',
-        'mergers and acquisitions': 'M&A',
-        'ma analyst': 'M&A Analyst',
-        'corporate finance': 'Corporate Finance',
-        'financial analyst': 'Financial Analyst',
-        'equity research': 'Equity Research',
-        'credit analyst': 'Credit Analyst',
-        'portfolio analyst': 'Portfolio Analyst',
-        'valuation analyst': 'Valuation Analyst',
-        'fixed income': 'Fixed Income',
+        'debt': 'Capital Markets',
+        'equity': 'Capital Markets',
+        'mergers': 'M&A',
+        'acquisitions': 'M&A',
+        'ma': 'M&A',
+        'leveraged': 'Leveraged Finance',
+        'syndications': 'Syndications',
+        'coverage': 'Coverage',
+
+        # Asset & Wealth Management
+        'asset': 'Asset Management',
+        'wealth': 'Wealth Management',
+        'portfolio': 'Portfolio Management',
+        'fund': 'Fund Management',
+        'investment': 'Investment Management',
+        'client': 'Client Management',
+        'private': 'Private Wealth',
+        'pwm': 'Private Wealth',
+
+        # Research & Analysis
+        'research': 'Research',
+        'analyst': 'Analysis',
+        'analysis': 'Analysis',
+        'financial': 'Financial Analysis',
+        'modeling': 'Financial Modeling',
+        'valuation': 'Valuation',
+        'market': 'Market Analysis',
+        'industry': 'Industry Analysis',
+
+        # Private Markets
         'private equity': 'Private Equity',
-        'venture capital': 'Venture Capital',
-        'asset management': 'Asset Management',
-        'wealth management': 'Wealth Management',
-    
-        # Consulting types
-        'technology consulting': 'Technology Consulting',
-        'digital consulting': 'Digital Consulting',
-        'risk consulting': 'Risk Consulting',
-        'operations consulting': 'Operations Consulting',
-        'financial consulting': 'Financial Consulting',
-        'human capital consulting': 'Human Capital Consulting',
-        'organizational consulting': 'Organizational Consulting',
-        'procurement consulting': 'Procurement Consulting',
-        'marketing consulting': 'Marketing Consulting',
-    
+        'pe': 'Private Equity',
+        'venture': 'Venture Capital',
+        'vc': 'Venture Capital',
+        'growth': 'Growth Equity',
+        'real estate': 'Real Estate',
+
+        # Sales & Trading
+        'sales': 'Sales',
+        'trading': 'Trading',
+        's&t': 'Sales & Trading',
+        'fixed income': 'Fixed Income',
+        'equities': 'Equities',
+        'commodities': 'Commodities',
+        'fx': 'Foreign Exchange',
+        'revenue': 'Revenue',
+        'account': 'Account Management',
+        'relationship': 'Relationship Management',
+        'advisory': 'Advisory',
+        'solutions': 'Solutions',
+        'institutional': 'Institutional',
+        'wholesale': 'Wholesale',
+        'distribution': 'Distribution',
+        'commercial': 'Commercial',
+
+        # Corporate Functions
+        'corporate': 'Corporate',
+        'finance': 'Finance',
+        'banking': 'Banking',
+        'development': 'Development',
+        'planning': 'Planning',
+        'strategy': 'Strategy',
+        'treasury': 'Treasury',
+        'underwriting': 'Underwriting',
+
+        # Consulting
+        'consulting': 'Consulting',
+        'consultant': 'Consulting',
+        'advisor': 'Advisory',
+        'services': 'Services',
+        'deal': 'Deals',
+        'transaction': 'Transactions',
+        'investment': 'Investments',
+        'aum': 'Asset Management',
+        'coordination': 'Coordination',
+        'planning': 'Planning',
+        'optimization': 'Optimization',
+        'excellence': 'Optimization',
+        'advisory': 'Advisory',
+        'management': 'Management',
+        'strategy': 'Strategy',
+        'transformation': 'Transformation',
+        'change': 'Change Management',
+        'operations': 'Operations',
+        'performance': 'Performance',
+        'improvement': 'Improvement',
+
         # Business & Strategy
-        'business operations': 'Business Operations',
-        'corporate strategy': 'Corporate Strategy',
-        'strategic planning': 'Strategic Planning',
-        'business development': 'Business Development',
-        'market research': 'Market Research',
-        'competitive intelligence': 'Competitive Intelligence',
-        'product strategy': 'Product Strategy',
-        'growth strategy': 'Growth Strategy',
-    
-        # Sales & Revenue
-        'sales operations': 'Sales Operations',
-        'revenue strategy': 'Revenue Strategy',
-        'revenue operations': 'Revenue Operations',
-        'commercial strategy': 'Commercial Strategy',
-        'go to market': 'Go-to-Market',
-    
-        # Operations & Planning
-        'financial planning': 'Financial Planning',
-        'corporate development': 'Corporate Development',
-        'strategic initiatives': 'Strategic Initiatives',
-        'business transformation': 'Business Transformation',
-        'process improvement': 'Process Improvement',
-        'program management': 'Program Management'
+        'business': 'Business',
+        'strategic': 'Strategy',
+        'analyst': 'Analysis',
+        'process': 'Process',
+        'project': 'Project',
+        'program': 'Program',
+        'operations': 'Operations'
     }
 
     # Keywords to exclude
-    exclude_keywords = ['data analyst', 'data science', 'software', 'engineer', 'developer', 'IT', 'technical']
+    exclude_keywords = [
+        'data analyst',
+        'data science',
+        'data scientist',
+        'ai',
+        'mobile',
+        'research',
+        'robot',
+        'technology',
+        'scientist',
+        'programmer',
+        'development',
+        'trading',
+        'data',
+        'software',
+        'engineer',
+        'developer',
+        'IT',
+        'technical',
+        'machine learning',
+        'artificial intelligence',
+        'devops',
+        'frontend',
+        'backend',
+        'full stack',
+        'quant',
+        'quantitative',
+        'derivatives',
+        'algorithmic',
+        'statistical',
+        'mathematical'
+    ]
 
-    try:
-        session = requests.Session()
-        session.verify = False
-        response = session.get(url, headers=headers)
+    # Process each source
+    for source_name, url in sources.items():
+        try:
+            session = requests.Session()
+            session.verify = False
+            response = session.get(url, headers=headers)
 
-        if response.status_code != 200:
-            print(f"Error accessing URL: Status code {response.status_code}")
-            return
+            if response.status_code != 200:
+                print(f"Error accessing {source_name}: Status code {response.status_code}")
+                continue
 
-        content = response.text
-        print("Content retrieved successfully, processing jobs...")
+            content = response.text
+            print(f"Processing jobs from {source_name}...")
 
-        rows = [row for row in content.split('\n') if '|' in row and
-                ('intern' in row.lower() or '2025' in row) and
-                not any(exclude in row.lower() for exclude in exclude_keywords)]
+            # Modified row processing to handle different formats
+            rows = [row for row in content.split('\n') if '|' in row and
+                    ('intern' in row.lower() or '2024' in row or '2025' in row) and
+                    not any(exclude in row.lower() for exclude in exclude_keywords)]
 
-        for row in rows:
-            columns = row.split('|')
-            if len(columns) >= 4:
-                company = columns[1].strip()
-                role = columns[2].strip().lower()
-                location = columns[3].strip()
+            for row in rows:
+                columns = row.split('|')
+                if len(columns) >= 4:
+                    company = columns[1].strip()
+                    role = columns[2].strip().lower()
+                    location = columns[3].strip()
+                    url_match = re.search(r'\[(?:[^\]]*)\]\((https?://[^\s\)]+)\)', row)
+                    link = url_match.group(1) if url_match else ''
 
-                url_match = re.search(r'\[(?:[^\]]*)\]\((https?://[^\s\)]+)\)', row)
-                link = url_match.group(1) if url_match else ''
+                    role_category = None
+                    for keyword, category in role_keywords.items():
+                        if keyword in role:
+                            role_category = category
+                            break
 
-                role_category = None
-                for keyword, category in role_keywords.items():
-                    if keyword in role:
-                        role_category = category
-                        break
+                    if role_category:
+                        clean_company = extract_company_name(company)
+                        cleaned_url = clean_company_url(link) if link else ""
 
-                if role_category:
-                    clean_company = extract_company_name(company)
-                    cleaned_url = clean_company_url(link) if link else ""
-                    jobs.append({
-                        'title': str(columns[2].strip()),
-                        'company': clean_company,
-                        'location': str(location),
-                        'url': cleaned_url,
-                        'application_url': cleaned_url,
-                        'category': role_category,
-                        'date_posted': str(datetime.now().strftime('%Y-%m-%d')),
-                        'source': 'SimplifyJobs'
-                    })
+                        jobs.append({
+                            'title': str(columns[2].strip()),
+                            'company': clean_company,
+                            'location': str(location),
+                            'url': cleaned_url,
+                            'application_url': cleaned_url,
+                            'category': role_category,
+                            'date_posted': str(datetime.now().strftime('%Y-%m-%d')),
+                            'source': source_name
+                        })
 
-                    quick_info.append({
-                        'internship': str(columns[2].strip()),
-                        'company': clean_company,
-                        'location': str(location),
-                        'category': role_category
-                    })
+                        quick_info.append({
+                            'internship': str(columns[2].strip()),
+                            'company': clean_company,
+                            'location': str(location),
+                            'category': role_category
+                        })
 
-                    print(f"Found job: {columns[2].strip()} at {clean_company}")
+                        print(f"Found job: {columns[2].strip()} at {clean_company} from {source_name}")
 
-    except Exception as e:
-        print(f"Error processing jobs: {str(e)}")
+        except Exception as e:
+            print(f"Error processing {source_name}: {str(e)}")
 
+    # Save results
     if jobs:
         df_full = pd.DataFrame(jobs)
         filename_full = f'business_internships_full_{datetime.now().strftime("%Y%m%d_%H%M")}.csv'
