@@ -60,6 +60,61 @@ def scrape_jobs():
 
         # Management related roles
         'management consultant': 'Management Consultant'
+
+        # Investment Banking & Finance
+        'investment banking': 'Investment Banking',
+        'ib analyst': 'Investment Banking Analyst',
+        'ib associate': 'Investment Banking Associate',
+        'capital markets': 'Capital Markets',
+        'mergers and acquisitions': 'M&A',
+        'ma analyst': 'M&A Analyst',
+        'corporate finance': 'Corporate Finance',
+        'financial analyst': 'Financial Analyst',
+        'equity research': 'Equity Research',
+        'credit analyst': 'Credit Analyst',
+        'portfolio analyst': 'Portfolio Analyst',
+        'valuation analyst': 'Valuation Analyst',
+        'fixed income': 'Fixed Income',
+        'private equity': 'Private Equity',
+        'venture capital': 'Venture Capital',
+        'asset management': 'Asset Management',
+        'wealth management': 'Wealth Management',
+    
+        # Consulting types
+        'technology consulting': 'Technology Consulting',
+        'digital consulting': 'Digital Consulting',
+        'risk consulting': 'Risk Consulting',
+        'operations consulting': 'Operations Consulting',
+        'financial consulting': 'Financial Consulting',
+        'human capital consulting': 'Human Capital Consulting',
+        'organizational consulting': 'Organizational Consulting',
+        'procurement consulting': 'Procurement Consulting',
+        'marketing consulting': 'Marketing Consulting',
+    
+        # Business & Strategy
+        'business operations': 'Business Operations',
+        'corporate strategy': 'Corporate Strategy',
+        'strategic planning': 'Strategic Planning',
+        'business development': 'Business Development',
+        'market research': 'Market Research',
+        'competitive intelligence': 'Competitive Intelligence',
+        'product strategy': 'Product Strategy',
+        'growth strategy': 'Growth Strategy',
+    
+        # Sales & Revenue
+        'sales operations': 'Sales Operations',
+        'revenue strategy': 'Revenue Strategy',
+        'revenue operations': 'Revenue Operations',
+        'commercial strategy': 'Commercial Strategy',
+        'go to market': 'Go-to-Market',
+    
+        # Operations & Planning
+        'financial planning': 'Financial Planning',
+        'corporate development': 'Corporate Development',
+        'strategic initiatives': 'Strategic Initiatives',
+        'business transformation': 'Business Transformation',
+        'process improvement': 'Process Improvement',
+        'program management': 'Program Management'
     }
 
     # Keywords to exclude
