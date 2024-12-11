@@ -59,7 +59,7 @@ def scrape_jobs():
         'business strategy': 'Business Strategy',
 
         # Management related roles
-        'management consultant': 'Management Consultant'
+        'management consultant': 'Management Consultant',
 
         # Investment Banking & Finance
         'investment banking': 'Investment Banking',
