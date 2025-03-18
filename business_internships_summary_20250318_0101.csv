@@ -1,18 +1,17 @@
 internship,company,location,category
+Utility Analyst Intern,Bernhard,"Little Rock, AR",Analysis
+Capital Markets Intern,Mr Cooper,"Dallas, TX",Capital Markets
+Customer Strategy & Analytics Analyst – Co-op/Internship,Bank of Montreal,"Toronto, ON, Canada",Analysis
 Intern – Business Intelligence,Orthofix,"Carlsbad, CA",Business
 Memory Business Unit Analyst Intern,Kioxia,"Irvine, CA",Analysis
-Football Information Summer Intern,Detroit Lions,"Taylor, MI",M&A
 User Experience Operations – Co-op/Internship,Bank of Montreal,"Toronto, ON, Canada",Private Equity
-People Analytics Intern,ASML,"San Jose, CA</br>Chandler, AZ</br>San Diego, CA",Private Equity
 Futures Business Intern,Clarivate,"Kansas City, MO",Business
 Marketing Analytics Intern,Xometry,"Lexington, KY</br>North Bethesda, MD",M&A
 Marketing Analytics Intern,,"Lexington, KY",M&A
 Sales Analytics Intern,Hewlett Packard HP,"Houston, TX",Sales
 Identity and Access Management (IAM) Analyst Intern,The Clorox Company,"Durham, NC, US",M&A
 Marketing Analytics Intern,,Remote in USA,M&A
-Business Systems Analyst Intern/Co-op,TD Bank,"Toronto, ON, Canada",Analysis
 Innovation Ventures Intern,,"Troy, MI",Venture Capital
-Analytics Consulting Intern,Braze,NYC,Consulting
 Intern for Total Operational Weather Readiness-Satellites - Towr-S,KBR,"Silver Spring, MD",Private Equity
 PLM Configuration Analyst Intern - Hsv MFG,Cadence Design Systems,"San Jose, CA",Analysis
 Intern – Enterprise Solutions - Innovation,Wunderman Thompson,"Kansas City, MO",Solutions
@@ -28,14 +27,15 @@ Business Analytics Intern,,"Washington, DC",Business
 Business Analytics Intern,,"Washington, DC",Business
 2025 REU Supplemental Funding 🇺🇸,Last Mile Education Fund,Remote,Fund Management
 SDE Intern - High-Performance Query Processing - Query Optimization,Amazon,"Palo Alto, CA</br>Seattle, WA</br>NYC",M&A
-Operating Tools Intern,Addepar,"Edinburgh, UK",Private Equity
-Corporate Intern - Digital and Analytics,Caterpillar Inc,"Peoria, IL</br>Chicago, IL</br>Irving, TX",Corporate
 System Behavior Analysis Intern,Zoox,"San Mateo, CA",Analysis
 2025 Summer Internship Program - People Analytics,Dun Bradstreet,"Jacksonville, FL",Private Equity
 2025 Summer Intern - Computational Science & Informatics,Roche,"Santa Clara, CA",M&A
 Explore Program Internship Opportunities: First-Year Students,Microsoft,"Redmond, WA",Program
 "Intern, IT Strategy , Summer 2025",Lucid Motors,"Newark, CA",Strategy
 2025 Summer Analyst Program,Goldman Sachs,"Dallas, TX</br>NYC, NY</br>Salt lake City, UT",Analysis
+FTT Investment Operations – Undergrad Intern,Franklin Templeton,"Rancho Cordova, CA</br>San Ramon, CA</br>Fort Lauderdale, FL",Investments
+FTT Investment Operations – Undergrad Intern,,"Rancho Cordova, CA</br>San Ramon, CA</br>Fort Lauderdale, FL",Investments
+Football Information Summer Intern,Detroit Lions,"Taylor, MI",M&A
 Summer Undergraduate Internship - Enterprise Delivery - APMO Automation & Analytics,RippleMatch,"Hartford, CT",M&A
 Marketing Analytics Intern,,"Charlotte, NC",M&A
 Marketing Analytics Intern,,"Chicago, IL",M&A
@@ -58,13 +58,16 @@ Investment Analyst Intern,,"Washington, DC",Investments
 Investment Analyst Intern,,"Denver, CO",Investments
 Investment Analyst Intern,,"Dallas, TX",Investments
 Investment Analyst Intern,,LA,Investments
+People Analytics Intern,ASML,"San Jose, CA</br>Chandler, AZ</br>San Diego, CA",Private Equity
 Summer 2025 Intern - Back-End HDD Manufacturing,Western Digital,"Irvine, CA",M&A
 National Security Solutions – Internship - Nss - SAR ATR and Image Classification,KBR,"Beavercreek, OH",M&A
-Business Intelligence Intern,Panasonic Avionics,"Newark, NJ",Business
+Business Intelligence Intern,,"Newark, NJ",Business
 NW Automation Practice Co-op/Intern,Nokia,Remote in Canada,M&A
 National Security Solutions – Internship - Nss - Program Management Portal,KBR,,M&A
 2025 Summer Internship - Analytics & Machine Intelligence,,"Cambridge, MA",M&A
 2025 Summer Intern Program – Originations Analytics Intern,Mr Cooper,"Dallas, TX",Program
+Business Systems Analyst Intern/Co-op,TD Bank,"Toronto, ON, Canada",Analysis
+Analytics Consulting Intern,Braze,NYC,Consulting
 Provider Risk Analytics Intern - Finance,Healthfirst,NYC,Finance
 Reporting Analyst Intern,Ensono,Remote in USA,Analysis
 Business Analytics Internship,Elevance Health,"Indianapolis, IN</br>Chicago, IL",Business
@@ -91,6 +94,7 @@ Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Materials Program Management Intern-Bachelor's,Applied Materials,"Austin, TX",M&A
+Operating Tools Intern,Addepar,"Edinburgh, UK",Private Equity
 Salesforce Administrator Intern,BambooHR,Utah,Sales
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
@@ -103,6 +107,7 @@ Customer Experience – Systems and Analytics Intern,Open Farm Pet,"Toronto, ON,
 People Analytics Intern,GOBankingRates,Remote in USA,Private Equity
 Academic Program Growth & Analytics Intern,Snowflake,"San Mateo, CA",Growth Equity
 Intern – Operations,Farallon Capital Management,SF,Private Equity
+Corporate Intern - Digital and Analytics,Caterpillar Inc,"Peoria, IL</br>Chicago, IL</br>Irving, TX",Corporate
 Network Automation Internship,,"Freehold Township, NJ",M&A
 Intern – Investment Analyst Program - Iap,Prologis,SF,Investments
 Business Systems Analyst Intern,,"Sunnyvale, CA",Analysis
@@ -165,20 +170,19 @@ Intelligence Specialist Internship - China Focus,Strider Technologies,"South Jor
 Program Manager Intern,Amazon,"Seattle, WA",M&A
 Analyst Intern,Puffco,LA,Analysis
 Solutions Intern,Litmus,"Santa Clara, CA",Solutions
+Utility Analyst Intern,Bernhard,"Little Rock, AR",Analysis
+Capital Markets Intern,Mr Cooper,"Dallas, TX",Capital Markets
+Customer Strategy & Analytics Analyst – Co-op/Internship,Bank of Montreal,"Toronto, ON, Canada",Analysis
 Intern – Business Intelligence,Orthofix,"Carlsbad, CA",Business
 Memory Business Unit Analyst Intern,Kioxia,"Irvine, CA",Analysis
-Football Information Summer Intern,Detroit Lions,"Taylor, MI",M&A
 User Experience Operations – Co-op/Internship,Bank of Montreal,"Toronto, ON, Canada",Private Equity
-People Analytics Intern,ASML,"San Jose, CA</br>Chandler, AZ</br>San Diego, CA",Private Equity
 Futures Business Intern,Clarivate,"Kansas City, MO",Business
 Marketing Analytics Intern,Xometry,"Lexington, KY</br>North Bethesda, MD",M&A
 Marketing Analytics Intern,,"Lexington, KY",M&A
 Sales Analytics Intern,Hewlett Packard HP,"Houston, TX",Sales
 Identity and Access Management (IAM) Analyst Intern,The Clorox Company,"Durham, NC, US",M&A
 Marketing Analytics Intern,,Remote in USA,M&A
-Business Systems Analyst Intern/Co-op,TD Bank,"Toronto, ON, Canada",Analysis
 Innovation Ventures Intern,,"Troy, MI",Venture Capital
-Analytics Consulting Intern,Braze,NYC,Consulting
 Intern for Total Operational Weather Readiness-Satellites - Towr-S,KBR,"Silver Spring, MD",Private Equity
 PLM Configuration Analyst Intern - Hsv MFG,Cadence Design Systems,"San Jose, CA",Analysis
 Intern – Enterprise Solutions - Innovation,Wunderman Thompson,"Kansas City, MO",Solutions
@@ -194,14 +198,15 @@ Business Analytics Intern,,"Washington, DC",Business
 Business Analytics Intern,,"Washington, DC",Business
 2025 REU Supplemental Funding 🇺🇸,Last Mile Education Fund,Remote,Fund Management
 SDE Intern - High-Performance Query Processing - Query Optimization,Amazon,"Palo Alto, CA</br>Seattle, WA</br>NYC",M&A
-Operating Tools Intern,Addepar,"Edinburgh, UK",Private Equity
-Corporate Intern - Digital and Analytics,Caterpillar Inc,"Peoria, IL</br>Chicago, IL</br>Irving, TX",Corporate
 System Behavior Analysis Intern,Zoox,"San Mateo, CA",Analysis
 2025 Summer Internship Program - People Analytics,Dun Bradstreet,"Jacksonville, FL",Private Equity
 2025 Summer Intern - Computational Science & Informatics,Roche,"Santa Clara, CA",M&A
 Explore Program Internship Opportunities: First-Year Students,Microsoft,"Redmond, WA",Program
 "Intern, IT Strategy , Summer 2025",Lucid Motors,"Newark, CA",Strategy
 2025 Summer Analyst Program,Goldman Sachs,"Dallas, TX</br>NYC, NY</br>Salt lake City, UT",Analysis
+FTT Investment Operations – Undergrad Intern,Franklin Templeton,"Rancho Cordova, CA</br>San Ramon, CA</br>Fort Lauderdale, FL",Investments
+FTT Investment Operations – Undergrad Intern,,"Rancho Cordova, CA</br>San Ramon, CA</br>Fort Lauderdale, FL",Investments
+Football Information Summer Intern,Detroit Lions,"Taylor, MI",M&A
 Summer Undergraduate Internship - Enterprise Delivery - APMO Automation & Analytics,RippleMatch,"Hartford, CT",M&A
 Marketing Analytics Intern,,"Charlotte, NC",M&A
 Marketing Analytics Intern,,"Chicago, IL",M&A
@@ -224,13 +229,16 @@ Investment Analyst Intern,,"Washington, DC",Investments
 Investment Analyst Intern,,"Denver, CO",Investments
 Investment Analyst Intern,,"Dallas, TX",Investments
 Investment Analyst Intern,,LA,Investments
+People Analytics Intern,ASML,"San Jose, CA</br>Chandler, AZ</br>San Diego, CA",Private Equity
 Summer 2025 Intern - Back-End HDD Manufacturing,Western Digital,"Irvine, CA",M&A
 National Security Solutions – Internship - Nss - SAR ATR and Image Classification,KBR,"Beavercreek, OH",M&A
-Business Intelligence Intern,Panasonic Avionics,"Newark, NJ",Business
+Business Intelligence Intern,,"Newark, NJ",Business
 NW Automation Practice Co-op/Intern,Nokia,Remote in Canada,M&A
 National Security Solutions – Internship - Nss - Program Management Portal,KBR,,M&A
 2025 Summer Internship - Analytics & Machine Intelligence,,"Cambridge, MA",M&A
 2025 Summer Intern Program – Originations Analytics Intern,Mr Cooper,"Dallas, TX",Program
+Business Systems Analyst Intern/Co-op,TD Bank,"Toronto, ON, Canada",Analysis
+Analytics Consulting Intern,Braze,NYC,Consulting
 Provider Risk Analytics Intern - Finance,Healthfirst,NYC,Finance
 Reporting Analyst Intern,Ensono,Remote in USA,Analysis
 Business Analytics Internship,Elevance Health,"Indianapolis, IN</br>Chicago, IL",Business
@@ -257,6 +265,7 @@ Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Materials Program Management Intern-Bachelor's,Applied Materials,"Austin, TX",M&A
+Operating Tools Intern,Addepar,"Edinburgh, UK",Private Equity
 Salesforce Administrator Intern,BambooHR,Utah,Sales
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
 Business Systems Analyst Intern/Co-op,,"Toronto, ON, Canada",Analysis
@@ -269,6 +278,7 @@ Customer Experience – Systems and Analytics Intern,Open Farm Pet,"Toronto, ON,
 People Analytics Intern,GOBankingRates,Remote in USA,Private Equity
 Academic Program Growth & Analytics Intern,Snowflake,"San Mateo, CA",Growth Equity
 Intern – Operations,Farallon Capital Management,SF,Private Equity
+Corporate Intern - Digital and Analytics,Caterpillar Inc,"Peoria, IL</br>Chicago, IL</br>Irving, TX",Corporate
 Network Automation Internship,,"Freehold Township, NJ",M&A
 Intern – Investment Analyst Program - Iap,Prologis,SF,Investments
 Business Systems Analyst Intern,,"Sunnyvale, CA",Analysis
