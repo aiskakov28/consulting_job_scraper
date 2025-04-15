@@ -1,10 +1,8 @@
 internship,company,location,category
 Power Solutions Intern,Xpansiv,NYC,Solutions
-Intern – BI Analyst,American Cancer Society,"Atlanta, GA",Analysis
 Natural Language Processing – Intern - NLP,IMO Health,"Houston, TX",Process
 Business Intelligence/Insights Intern,Forbes,NYC,Business
 Relationship Manager Commercial Markets Intern,Royal Bank of Canada,"St. John's, NL, Canada",M&A
-Finance & Sourcing Analytics Intern,Lennox International,"Richardson, TX",Finance
 Catastrophe Advisory Co-op - College Program 2025,Marsh McLennan,"Boston, MA</br>Philadelphia, PA</br>NYC",Advisory
 Summer 2025 Product Line Management Internship-Bachelors/Masters,Applied Materials,"Santa Clara, CA",M&A
 Marketing Analytics Intern,Xometry,"Lexington, KY</br>North Bethesda, MD",M&A
@@ -22,6 +20,7 @@ Services Intern,Celonis,"Raleigh, NC",Services
 Explore Program Internship Opportunities: First-Year Students,Microsoft,"Redmond, WA",Program
 "Intern, IT Strategy , Summer 2025",Lucid Motors,"Newark, CA",Strategy
 2025 Summer Analyst Program,Goldman Sachs,"Dallas, TX</br>NYC, NY</br>Salt lake City, UT",Analysis
+Intern – BI Analyst,American Cancer Society,"Atlanta, GA",Analysis
 Comcast Product Analyst Intern,Comcast,"Philadelphia, PA",Analysis
 2025 Intern - Digital - Product Lifecycle Management,RTX,"Andover, MA</br>McKinney, TX</br>Tucson, AZ",M&A
 Golin Analytics Internship Program - June-September,IPG DXTRA,NYC,Program
@@ -30,6 +29,7 @@ Information Systems Intern - Classic Team,Auto Club Enterprises,"Newport Beach, 
 Summer 2025 Intern - ML & Wafer Defect Inspection,Western Digital,"Fremont, CA",Private Equity
 Student Intern - Cancer Program Analytics,Ohio State University - Columbus,"Columbus, OH",Program
 Summer 2025 Intern - ML & Wafer Defect Inspection,Western Digital,"Fremont, CA",Private Equity
+Finance & Sourcing Analytics Intern,Lennox International,"Richardson, TX",Finance
 New Business Intern,,"Moonachie, NJ",Business
 New Business Intern,,"Moonachie, NJ",Business
 Business Analytics Intern,Medline,"Northbrook, IL",Business
@@ -200,11 +200,9 @@ Program Manager Intern,Amazon,"Seattle, WA",M&A
 Analyst Intern,Puffco,LA,Analysis
 Solutions Intern,Litmus,"Santa Clara, CA",Solutions
 Power Solutions Intern,Xpansiv,NYC,Solutions
-Intern – BI Analyst,American Cancer Society,"Atlanta, GA",Analysis
 Natural Language Processing – Intern - NLP,IMO Health,"Houston, TX",Process
 Business Intelligence/Insights Intern,Forbes,NYC,Business
 Relationship Manager Commercial Markets Intern,Royal Bank of Canada,"St. John's, NL, Canada",M&A
-Finance & Sourcing Analytics Intern,Lennox International,"Richardson, TX",Finance
 Catastrophe Advisory Co-op - College Program 2025,Marsh McLennan,"Boston, MA</br>Philadelphia, PA</br>NYC",Advisory
 Summer 2025 Product Line Management Internship-Bachelors/Masters,Applied Materials,"Santa Clara, CA",M&A
 Marketing Analytics Intern,Xometry,"Lexington, KY</br>North Bethesda, MD",M&A
@@ -222,6 +220,7 @@ Services Intern,Celonis,"Raleigh, NC",Services
 Explore Program Internship Opportunities: First-Year Students,Microsoft,"Redmond, WA",Program
 "Intern, IT Strategy , Summer 2025",Lucid Motors,"Newark, CA",Strategy
 2025 Summer Analyst Program,Goldman Sachs,"Dallas, TX</br>NYC, NY</br>Salt lake City, UT",Analysis
+Intern – BI Analyst,American Cancer Society,"Atlanta, GA",Analysis
 Comcast Product Analyst Intern,Comcast,"Philadelphia, PA",Analysis
 2025 Intern - Digital - Product Lifecycle Management,RTX,"Andover, MA</br>McKinney, TX</br>Tucson, AZ",M&A
 Golin Analytics Internship Program - June-September,IPG DXTRA,NYC,Program
@@ -230,6 +229,7 @@ Information Systems Intern - Classic Team,Auto Club Enterprises,"Newport Beach, 
 Summer 2025 Intern - ML & Wafer Defect Inspection,Western Digital,"Fremont, CA",Private Equity
 Student Intern - Cancer Program Analytics,Ohio State University - Columbus,"Columbus, OH",Program
 Summer 2025 Intern - ML & Wafer Defect Inspection,Western Digital,"Fremont, CA",Private Equity
+Finance & Sourcing Analytics Intern,Lennox International,"Richardson, TX",Finance
 New Business Intern,,"Moonachie, NJ",Business
 New Business Intern,,"Moonachie, NJ",Business
 Business Analytics Intern,Medline,"Northbrook, IL",Business
